@@ -1,0 +1,20 @@
+{% extends "../base.html" %}
+{% load static %}
+{% block title %}Payment Successful{%endblock %}
+{% block content %}
+
+<div class="container">
+  <div class="col-12">
+    <h1 class="h2">Compra realizada</h1>
+  </div>
+  <div class="col-12">
+    <p>Resumen de compra</p>
+  </div>
+  <hr />
+  <div class="col-12">
+    <p>Puede seguir comprando en <a href="{% url "basket:basket_summary" %}">Carrito</a></p>
+  </div>
+</div>
+
+
+{% endblock %}
